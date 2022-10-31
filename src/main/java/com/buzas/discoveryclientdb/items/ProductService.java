@@ -1,4 +1,4 @@
-package com.buzas.discoveryclientdb;
+package com.buzas.discoveryclientdb.items;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -8,10 +8,11 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 public class ProductService {
+//    TODO: не видит это дерьмо. Вообще никак
     ProductRepo productRepo;
 
     public List<Product> findAll() {
-        return productRepo.findAllFromProducts();
+        return productRepo.findAll();
     }
 
     public void deleteById(Long id) {

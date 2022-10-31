@@ -1,5 +1,7 @@
-package com.buzas.discoveryclientdb;
+package com.buzas.discoveryclientdb.controllers;
 
+import com.buzas.discoveryclientdb.items.Product;
+import com.buzas.discoveryclientdb.items.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
