@@ -11,12 +11,7 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 public class ProductController {
-    ProductService productService;
-
-    @PostConstruct
-    private void init() {
-        productService = new ProductService();
-    }
+    private final ProductService productService;
 
     @GetMapping("/")
     public List<Product> findAll() {

@@ -8,8 +8,7 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 public class ProductService {
-//    TODO: не видит это дерьмо. Вообще никак
-    ProductRepo productRepo;
+    private final ProductRepo productRepo;
 
     public List<Product> findAll() {
         return productRepo.findAll();
